@@ -1,3 +1,5 @@
+//메모리: 2032KB, 시간: 0ms
+/*
 #include <iostream>
 #include <queue>
 using namespace std;
@@ -61,6 +63,52 @@ int main() {
     cin >> n >> expr;
     ret = calculate(expr);
     bracket(0);
+    cout << ret << '\n';
+
+    return 0;
+}
+*/
+
+//메모리: 2024KB, 시간: 0ms
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int n, ret = -987654321;
+string expr;
+vector<int> nums;
+vector<char> ops;
+
+int calcul(char op, int a, int b) {
+    if (op == '+') return a + b;
+    if (op == '-') return a - b;
+    return a * b; 
+}
+
+void go(int num, int idx) {
+    if (idx >= ops.size()) {
+        ret = max(ret, num);
+        return;
+    }
+
+    go(calcul(ops[idx], num, nums[idx + 1]), idx + 1);
+    if (idx + 2 <= nums.size() - 1) {
+        int tmp = calcul(ops[idx + 1], nums[idx + 1], nums[idx + 2]);
+        go(calcul(ops[idx], num, tmp), idx + 2);
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    cout.tie(NULL);
+
+    cin >> n >> expr;
+    for (char c : expr) {
+        if (c >= '0' && c <= '9') nums.push_back(c - '0');
+        else ops.push_back(c);
+    }
+    go(nums[0], 0);
     cout << ret << '\n';
 
     return 0;
