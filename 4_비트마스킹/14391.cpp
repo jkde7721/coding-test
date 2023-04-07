@@ -50,6 +50,7 @@ int main() {
 */
 
 //메모리: 2020KB, 시간: 12ms
+/*
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -94,6 +95,43 @@ int main() {
 
     return 0;
 }
+*/
 
-//메모리: KB, 시간: ms
+//메모리: 2020KB, 시간: 8ms
 //visited, dir 배열 사용하지 않고 풀어보기 (중첩 루프 3개까지만)
+#include <iostream>
+using namespace std;
+
+int n, m, sum, ret, tmp, nums[4][4];
+
+int main() {
+    scanf("%d %d", &n, &m);
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < m; j++) {
+            scanf("%1d", &nums[i][j]);
+        }
+    }
+    for (int k = 0; k < (1 << n*m); k++) {
+        sum = 0;
+        for (int i = 0; i < n; i++) {
+            tmp = 0;
+            for (int j = 0; j < m; j++) {
+                if (!(k & (1 << m * i + j))) tmp = tmp * 10 + nums[i][j];
+                else { sum += tmp; tmp = 0; }
+            }
+            if (tmp != 0) sum += tmp;
+        }
+        for (int j = 0; j < m; j++) {
+            tmp = 0;
+            for (int i = 0; i < n; i++) {
+                if (k & (1 << m * i + j)) tmp = tmp * 10 + nums[i][j];
+                else { sum += tmp; tmp = 0; }
+            }
+            if (tmp != 0) sum += tmp;
+        }
+        ret = max(ret, sum);
+    }
+    cout << ret << '\n';
+
+    return 0;
+}
