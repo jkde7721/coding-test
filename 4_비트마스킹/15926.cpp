@@ -36,6 +36,7 @@ int main() {
 
 //메모리: 4004KB, 시간: 8ms
 //스택만을 이용 (스택에 '(' 문자 뿐만 아니라 ')' 문자도 저장되므로 인덱스와 문자를 모두 저장하기 위해 pair형 사용)
+/*
 #include <iostream>
 #include <stack>
 using namespace std;
@@ -63,6 +64,35 @@ int main() {
 
     return 0;
 }
+*/
+
+//메모리: 3192KB, 시간: 4ms
+//stack<int>만 사용해서 다시 풀어보기
+#include <iostream>
+#include <stack>
+using namespace std;
+
+int n, ret;
+string s;
+stack<int> stk;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    cin >> n >> s;
+    stk.push(-1);
+    for (int i = 0; i < n; i++) {
+        if (s[i] == ')') {
+            stk.pop();
+            if (stk.size()) ret = max(ret, i - stk.top());
+            else stk.push(i);
+        }
+        else stk.push(i);
+    }
+    cout << ret << '\n';
+
+    return 0;
+}
 
 /*
 반례
@@ -70,5 +100,3 @@ int main() {
 (()(()))
 정답: 8
 */
-
-//stack<int>만 사용해서 다시 풀어보기
