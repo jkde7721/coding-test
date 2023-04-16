@@ -1,5 +1,6 @@
 //메모리: 2024KB, 시간: 0ms
 //optimal algorithm: 멀티탭이 다 찼을 경우 가장 먼 미래에 사용될 전기 용품과 swap
+/*
 #include <iostream>
 #include <queue>
 #define MAX 101
@@ -37,6 +38,44 @@ int main() {
 
     return 0;
 }
+*/
 
-//메모리: KB, 시간: ms
+//메모리: 2020KB, 시간: 0ms
 //priority_queue 사용하지 않고 vector만으로 풀어보기
+#include <iostream>
+#include <vector>
+#define INF 987654321
+using namespace std;
+
+int n, k, ret, a[101];
+bool use[101];
+vector<int> v;
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    cin >> n >> k;
+    for (int i = 0; i < k; i++) cin >> a[i];
+    for (int i = 0; i < k; i++) {
+        if (use[a[i]]) continue;
+        if (v.size() >= n) {
+            int pos = 0, max_idx = 0;
+            for (int j = 0; j < v.size(); j++) {
+                int here = INF;
+                for (int m = i + 1; m < k; m++) {
+                    if (v[j] == a[m]) { here = m; break; }
+                }
+                if (max_idx < here) {
+                    max_idx = here;
+                    pos = j;
+                }
+            }
+            use[v[pos]] = 0; ret++;
+            v.erase(v.begin() + pos);
+        }
+        v.push_back(a[i]); use[a[i]] = 1;
+    }
+    cout << ret << '\n';
+
+    return 0;
+}
