@@ -86,11 +86,12 @@ ex. 64 32 32 64 배열에서 오른쪽 방향으로 이동 시 올바른 결과: 64 64 64 / 잘못된 
 4. segfault 오류: 재귀함수(go) → for → while → while 안에 int y = i, x = j, ny, nx; 해당 선언문 존재, 이 경우 매 반복마다 해당 변수에 대한 메모리 할당과 해제가 발생
 → y, x, ny, nx 변수를 전역변수로 선언
 
-?? 배열의 인덱스를 기반으로 풀다보니 세세하게 신경써줘야 하는 부분 많이 발생 → 큐로 다시 풀어보기
+→ 배열의 인덱스를 기반으로 풀다보니 세세하게 신경써줘야 하는 부분 많이 발생 → 큐로 다시 풀어보기
 */
 
 //메모리: 2028KB, 시간: 4ms
 //큐를 이용한 풀이
+/*
 #include <iostream>
 #include <queue>
 #include <algorithm>
@@ -155,6 +156,70 @@ void go(int cnt) {
     for (int k = 0; k < 4; k++) {
         move(k);
         go(cnt + 1);
+        memcpy(b, tmp, sizeof(tmp));
+    }
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) cin >> b[i][j];
+    }
+    go(0);
+    cout << ret << '\n';
+
+    return 0;
+}
+*/
+
+//메모리: 2028KB, 시간: 4ms
+//큐를 이용한 풀이 + 배열을 rotate하여 상하좌우로 미는 로직의 중복 제거
+#include <bits/stdc++.h>
+using namespace std;
+
+int n, b[20][20], ret, pre;
+queue<int> q;
+
+void rotateAll(int a[20][20]) {
+    int tmp[20][20];
+    memcpy(tmp, a, sizeof(tmp));
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) a[i][j] = tmp[n-1-j][i];
+    }
+}
+
+void move() {
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (!b[i][j]) continue;
+            q.push(b[i][j]);
+        }
+        q.push(0);
+        pre = q.front(); q.pop();
+        for (int j = 0; j < n; j++) {
+            if (q.empty()) { b[i][j] = 0; continue; }
+            if (pre == q.front()) {
+                b[i][j] = pre * 2; q.pop();
+            }
+            else b[i][j] = pre;
+            pre = q.front(); q.pop();
+        }
+    }
+}
+
+void go(int cnt) {
+    if (cnt == 5) {
+        ret = max(ret, *max_element(&b[0][0], &b[0][0] + 400));
+        return;
+    }
+    int tmp[20][20];
+    memcpy(tmp, b, sizeof(b));
+    for (int k = 0; k < 4; k++) {
+        move();
+        go(cnt + 1);
+        rotateAll(tmp);
         memcpy(b, tmp, sizeof(tmp));
     }
 }
