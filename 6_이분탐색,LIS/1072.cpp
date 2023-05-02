@@ -1,4 +1,4 @@
-//메모리: 2020KB, 시간: 0ms
+//???: 2020KB, ??: 0ms
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;
@@ -10,9 +10,9 @@ int main() {
     cin.tie(NULL); cout.tie(NULL);
     cin >> x >> y;
     z = 100 * y / x;
-    //99% 승률에서 100% 승률 만들기 불가능
+    //99% ???? 100% ?? ??? ???
     if (z >= 99) { cout << "-1\n"; return 0; }
-    //최대 60번 루프
+    //?? 60? ??
     while (l <= r) {
         mid = (l + r) / 2;
         if ((100 * (y + mid) / (x + mid)) != z) {
