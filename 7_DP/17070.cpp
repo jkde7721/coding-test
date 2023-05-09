@@ -1,4 +1,5 @@
 //메모리: 2024KB, 시간: 0ms
+/*
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -33,5 +34,42 @@ int main() {
 
     return 0;
 }
+*/
 
 //재귀 사용하지 않고 반복문만으로 풀어보기
+#include <bits/stdc++.h>
+using namespace std;
+
+int n, home[16][16], cnt[16][16][3];
+
+bool check(int y, int x, int dir) {
+    if (y >= n || x >= n || home[y][x]) return false;
+    if (dir == 2 && (home[y-1][x] || home[y][x-1])) return false;
+    return true;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    cin >> n;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) cin >> home[i][j];
+    }
+    cnt[0][1][0] = 1;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; j < n; j++) {
+            if (check(i, j + 1, 0)) cnt[i][j+1][0] += cnt[i][j][0];
+            if (check(i + 1, j + 1, 2)) cnt[i+1][j+1][2] += cnt[i][j][0];
+
+            if (check(i + 1, j, 1)) cnt[i+1][j][1] += cnt[i][j][1];
+            if (check(i + 1, j + 1, 2)) cnt[i+1][j+1][2] += cnt[i][j][1];
+
+            if (check(i, j + 1, 0)) cnt[i][j+1][0] += cnt[i][j][2];
+            if (check(i + 1, j, 1)) cnt[i+1][j][1] += cnt[i][j][2];
+            if (check(i + 1, j + 1, 2)) cnt[i+1][j+1][2] += cnt[i][j][2];
+        }
+    }
+    cout << (cnt[n-1][n-1][0] + cnt[n-1][n-1][1] + cnt[n-1][n-1][2]) << '\n';
+
+    return 0;
+}
