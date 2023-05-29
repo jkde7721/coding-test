@@ -60,3 +60,64 @@ int main() {
 
     return 0;
 }
+
+//다른 풀이 
+//남동쪽 방향에 있는 섬들의 개수를 count하는 방식으로 구현
+/*
+#include <bits/stdc++.h>
+using namespace std;
+typedef long long ll;
+
+int t, n, idx;
+ll ret;
+
+bool cmp(pair<int, int> a, pair<int, int> b) {
+    if (a.first == b.first) return a.second < b.second;
+    return a.first > b.first;
+}
+
+void update(vector<int>& tree, int idx, int diff) {
+    while (idx < tree.size()) {
+        tree[idx] += diff;
+        idx += (idx & -idx);
+    }
+}
+
+int sum(vector<int>& tree, int idx) {
+    int ret = 0;
+    while (idx > 0) {
+        ret += tree[idx];
+        idx -= (idx & -idx);
+    }
+    return ret;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    cin >> t;
+    while (t--) {
+        cin >> n; ret = 0;
+        vector<pair<int, int>> land(n);
+        vector<int> _y;
+        for (int i = 0; i < n; i++) {
+            cin >> land[i].first >> land[i].second;
+            _y.push_back(land[i].second);
+        }
+        sort(land.begin(), land.end(), cmp);
+        sort(_y.begin(), _y.end());
+        _y.erase(unique(_y.begin(), _y.end()), _y.end());
+
+        vector<int> tree(_y.size() + 1, 0);
+        idx = lower_bound(_y.begin(), _y.end(), land[0].second) - _y.begin() + 1;
+        update(tree, idx, 1);
+        for (int i = 1; i < n; i++) {
+            idx = lower_bound(_y.begin(), _y.end(), land[i].second) - _y.begin() + 1;
+            ret += sum(tree, idx); update(tree, idx, 1);
+        }
+        cout << ret << '\n';
+    }
+
+    return 0;
+}
+*/
