@@ -6,8 +6,8 @@
 - [1202번 보석 도둑](https://www.acmicpc.net/problem/1202) ∨
 - [1219번 오민식의 고민](https://www.acmicpc.net/problem/1219) ∨
 - [1280번 나무 심기](https://www.acmicpc.net/problem/1280) ∨
-- [1285번 동전 뒤집기](https://www.acmicpc.net/problem/1285)
-- [1315번 RPG](https://www.acmicpc.net/problem/1315)
+- [1285번 동전 뒤집기](https://www.acmicpc.net/problem/1285) ∨
+- [1315번 RPG](https://www.acmicpc.net/problem/1315) ∨
 - [1450번 냅색문제](https://www.acmicpc.net/problem/1450)
 - [1480번 보석 모으기](https://www.acmicpc.net/problem/1480)
 - [1486번 등산](https://www.acmicpc.net/problem/1486)
