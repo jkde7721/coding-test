@@ -1,4 +1,4 @@
-//메모리: 8740KB, 시간: 96ms
+//메모리: 8740KB, 시간: 8ms
 #include <iostream>
 #include <cstring>
 using namespace std;
@@ -10,12 +10,15 @@ int go(int idx, int cap, int steal) {
     if (idx == m) return 0;
     int& ret = dp[idx][cap][steal];
     if (ret == -1) {
-        //현재 해당 가방에 보석을 아예 훔치지 않거나 n개의 보석 중 하나를 훔치거나
-        ret = max(ret, go(idx + 1, c, steal));
+        bool visited = 0;
+        //그리디하게 현재 가방에 더이상 넣을 수 없을 때까지 훔침
         for (int i = 0; i < n; i++) {
             if ((1 << i) & steal || cap < w[i]) continue; //이미 훔친 보석 or 용량 부족
             ret = max(ret, go(idx, cap - w[i], (1 << i) | steal) + 1);
+            visited = 1;
         }
+        //현재 가방의 남아있는 용량 부족 → 다음 가방으로 넘어감
+        if (!visited) ret = max(ret, go(idx + 1, c, steal));
     }
     return ret;
 }
@@ -27,6 +30,5 @@ int main() {
     for (int i = 0; i < n; i++) cin >> w[i];
     memset(dp, -1, sizeof(dp));
     cout << go(0, c, 0) << '\n';
-
     return 0;
 }
