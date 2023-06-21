@@ -1,4 +1,5 @@
 //메모리: 2508KB, 시간: 20ms
+/*
 #include <bits/stdc++.h>
 #define INF 987654321
 using namespace std;
@@ -41,5 +42,44 @@ int main() {
     fill(&dp[0][0][0][0], &dp[0][0][0][0] + 100000, INF);
     cout << go(0, start[0] - '0', (n > 1 ? start[1] - '0' : 0), (n > 2 ? start[2] - '0' : 0)) << '\n';
 
+    return 0;
+}
+*/
+
+//메모리: 2500KB, 시간: 16ms
+#include <bits/stdc++.h>
+#define INF 987654321
+using namespace std;
+
+//dp 배열: 현재 인덱스 위치의 디스크로부터 디스크 3개의 상태에서 anw까지 디스크를 돌리는 최소 횟수 저장 
+int n, dp[104][10][10][10], cur[104], anw[104];
+string tmp, tmp2;
+
+int go(int idx, int a, int b, int c) {
+    if (idx == n) return 0;
+    if (anw[idx] == a) return go(idx + 1, b, c, cur[idx + 3]);
+    int& ret = dp[idx][a][b][c];
+    if (ret == INF) {
+        for (int i = 1; i <= 3; i++) {
+            ret = min(ret, go(idx, (a + i) % 10, b, c) + 1);
+            ret = min(ret, go(idx, (a + 10 - i) % 10, b, c) + 1);
+            ret = min(ret, go(idx, (a + i) % 10, (b + i) % 10, c) + 1);
+            ret = min(ret, go(idx, (a + 10 - i) % 10, (b + 10 -i) % 10, c) + 1);
+            ret = min(ret, go(idx, (a + i) % 10, (b + i) % 10, (c + i) % 10) + 1);
+            ret = min(ret, go(idx, (a + 10 - i) % 10, (b + 10 - i) % 10, (c + 10 -i) % 10) + 1);
+        }
+    }
+    return ret;
+}
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL); cout.tie(NULL);
+    fill(&dp[0][0][0][0], &dp[0][0][0][0] + 104*1000, INF);
+    cin >> n >> tmp >> tmp2;
+    for (int i = 0; i < n; i++) {
+        cur[i] = tmp[i] - '0'; anw[i] = tmp2[i] - '0';
+    }
+    cout << go(0, cur[0], cur[1], cur[2]) << '\n';
     return 0;
 }

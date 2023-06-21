@@ -12,8 +12,8 @@
 - [1480번 보석 모으기](https://www.acmicpc.net/problem/1480) ∨
 - [1486번 등산](https://www.acmicpc.net/problem/1486) ∨
 - [1513번 경로 찾기](https://www.acmicpc.net/problem/1513) ∨
-- [1514번 자물쇠](https://www.acmicpc.net/problem/1514)
-- [1561번 놀이 공원](https://www.acmicpc.net/problem/1561)
+- [1514번 자물쇠](https://www.acmicpc.net/problem/1514) ∨
+- [1561번 놀이 공원](https://www.acmicpc.net/problem/1561) ∨
 - [1931번 회의실 배정](https://www.acmicpc.net/problem/1931)
 - [2098번 외판원 순회](https://www.acmicpc.net/problem/2098)
 - [2240번 자두나무](https://www.acmicpc.net/problem/2240)
