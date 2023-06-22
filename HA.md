@@ -14,8 +14,8 @@
 - [1513번 경로 찾기](https://www.acmicpc.net/problem/1513) ∨
 - [1514번 자물쇠](https://www.acmicpc.net/problem/1514) ∨
 - [1561번 놀이 공원](https://www.acmicpc.net/problem/1561) ∨
-- [1931번 회의실 배정](https://www.acmicpc.net/problem/1931)
-- [2098번 외판원 순회](https://www.acmicpc.net/problem/2098)
+- [1931번 회의실 배정](https://www.acmicpc.net/problem/1931) ∨
+- [2098번 외판원 순회](https://www.acmicpc.net/problem/2098) ∨
 - [2240번 자두나무](https://www.acmicpc.net/problem/2240)
 - [2618번 경찰차](https://www.acmicpc.net/problem/2618)
 - [3015번 오아시스 재결합](https://www.acmicpc.net/problem/3015)
