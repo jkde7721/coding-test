@@ -18,8 +18,8 @@
 - [2098번 외판원 순회](https://www.acmicpc.net/problem/2098) ∨
 - [2240번 자두나무](https://www.acmicpc.net/problem/2240) ∨
 - [2618번 경찰차](https://www.acmicpc.net/problem/2618) ∨
-- [3015번 오아시스 재결합](https://www.acmicpc.net/problem/3015)
-- [5419번 북서풍](https://www.acmicpc.net/problem/5419)
+- [3015번 오아시스 재결합](https://www.acmicpc.net/problem/3015) ∨
+- [5419번 북서풍](https://www.acmicpc.net/problem/5419) ∨
 - [5719번 거의 최단 경로](https://www.acmicpc.net/problem/5719)
 - [9370번 미확인 도착지](https://www.acmicpc.net/problem/9370)
 - [9935번 문자열 폭발](https://www.acmicpc.net/problem/9935)
