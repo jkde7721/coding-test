@@ -1,45 +1,45 @@
 ### Hard & Again
 
-¾î·Á¿ö¼­ ´Ù½Ã Ç®¾îº¼ ¹®Á¦ ¸®½ºÆ®
+ì–´ë ¤ì›Œì„œ ë‹¤ì‹œ í’€ì–´ë³¼ ë¬¸ì œ ë¦¬ìŠ¤íŠ¸
 
-- [1103¹ø °ÔÀÓ](https://www.acmicpc.net/problem/1103) ¡ı
-- [1202¹ø º¸¼® µµµÏ](https://www.acmicpc.net/problem/1202) ¡ı
-- [1219¹ø ¿À¹Î½ÄÀÇ °í¹Î](https://www.acmicpc.net/problem/1219) ¡ı
-- [1280¹ø ³ª¹« ½É±â](https://www.acmicpc.net/problem/1280) ¡ı
-- [1285¹ø µ¿Àü µÚÁı±â](https://www.acmicpc.net/problem/1285) ¡ı
-- [1315¹ø RPG](https://www.acmicpc.net/problem/1315) ¡ı
-- [1450¹ø ³À»ö¹®Á¦](https://www.acmicpc.net/problem/1450) ¡ı
-- [1480¹ø º¸¼® ¸ğÀ¸±â](https://www.acmicpc.net/problem/1480) ¡ı
-- [1486¹ø µî»ê](https://www.acmicpc.net/problem/1486) ¡ı
-- [1513¹ø °æ·Î Ã£±â](https://www.acmicpc.net/problem/1513) ¡ı
-- [1514¹ø ÀÚ¹°¼è](https://www.acmicpc.net/problem/1514) ¡ı
-- [1561¹ø ³îÀÌ °ø¿ø](https://www.acmicpc.net/problem/1561) ¡ı
-- [1931¹ø È¸ÀÇ½Ç ¹èÁ¤](https://www.acmicpc.net/problem/1931) ¡ı
-- [2098¹ø ¿ÜÆÇ¿ø ¼øÈ¸](https://www.acmicpc.net/problem/2098) ¡ı
-- [2240¹ø ÀÚµÎ³ª¹«](https://www.acmicpc.net/problem/2240) ¡ı
-- [2618¹ø °æÂûÂ÷](https://www.acmicpc.net/problem/2618) ¡ı
-- [3015¹ø ¿À¾Æ½Ã½º Àç°áÇÕ](https://www.acmicpc.net/problem/3015) ¡ı
-- [5419¹ø ºÏ¼­Ç³](https://www.acmicpc.net/problem/5419) ¡ı
-- [5719¹ø °ÅÀÇ ÃÖ´Ü °æ·Î](https://www.acmicpc.net/problem/5719) ¡ı
-- [9370¹ø ¹ÌÈ®ÀÎ µµÂøÁö](https://www.acmicpc.net/problem/9370) ¡ı
-- [9935¹ø ¹®ÀÚ¿­ Æø¹ß](https://www.acmicpc.net/problem/9935)
-- [10942¹ø ÆÓ¸°µå·Ò](https://www.acmicpc.net/problem/10942)
-- [11658¹ø ±¸°£ ÇÕ ±¸ÇÏ±â 3](https://www.acmicpc.net/problem/11658)
-- [12851¹ø ¼û¹Ù²ÀÁú 2](https://www.acmicpc.net/problem/12851)
-- [12852¹ø 1·Î ¸¸µé±â 2](https://www.acmicpc.net/problem/12852)
-- [12865¹ø Æò¹üÇÑ ¹è³¶](https://www.acmicpc.net/problem/12865)
-- [12869¹ø ¹ÂÅ»¸®½ºÅ©](https://www.acmicpc.net/problem/12869)
-- [14391¹ø Á¾ÀÌ Á¶°¢](https://www.acmicpc.net/problem/14391)
-- [14863¹ø ¼­¿ï¿¡¼­ °æ»ê±îÁö](https://www.acmicpc.net/problem/14863)
-- [14864¹ø ÁÙ¼­±â](https://www.acmicpc.net/problem/14864)
-- [15684¹ø »ç´Ù¸® Á¶ÀÛ](https://www.acmicpc.net/problem/15684)
-- [15926¹ø Çö¿íÀº °ıÈ£¿ÕÀÌ¾ß!!](https://www.acmicpc.net/problem/15926)
-- [15972¹ø ¹°ÅÊÅ©](https://www.acmicpc.net/problem/15972)
-- [15989¹ø 1,2,3 ´õÇÏ±â 4](https://www.acmicpc.net/problem/15989)
-- [16118¹ø ´Şºû ¿©¿ì](https://www.acmicpc.net/problem/16118)
-- [16637¹ø °ıÈ£ Ãß°¡ÇÏ±â](https://www.acmicpc.net/problem/16637)
-- [17070¹ø ÆÄÀÌÇÁ ¿Å±â±â 1](https://www.acmicpc.net/problem/17070)
-- [17071¹ø ¼û¹Ù²ÀÁú 5](https://www.acmicpc.net/problem/17071)
-- [17136¹ø »öÁ¾ÀÌ ºÙÀÌ±â](https://www.acmicpc.net/problem/17136)
-- [17611¹ø Á÷°¢´Ù°¢Çü](https://www.acmicpc.net/problem/17611)
-- [17616¹ø µî¼ö Ã£±â](https://www.acmicpc.net/problem/17616)
+- [1103ë²ˆ ê²Œì„](https://www.acmicpc.net/problem/1103) âœ…
+- [1202ë²ˆ ë³´ì„ ë„ë‘‘](https://www.acmicpc.net/problem/1202) âœ…
+- [1219ë²ˆ ì˜¤ë¯¼ì‹ì˜ ê³ ë¯¼](https://www.acmicpc.net/problem/1219) âœ…
+- [1280ë²ˆ ë‚˜ë¬´ ì‹¬ê¸°](https://www.acmicpc.net/problem/1280) âœ…
+- [1285ë²ˆ ë™ì „ ë’¤ì§‘ê¸°](https://www.acmicpc.net/problem/1285) âœ…
+- [1315ë²ˆ RPG](https://www.acmicpc.net/problem/1315) âœ…
+- [1450ë²ˆ ëƒ…ìƒ‰ë¬¸ì œ](https://www.acmicpc.net/problem/1450) âœ…
+- [1480ë²ˆ ë³´ì„ ëª¨ìœ¼ê¸°](https://www.acmicpc.net/problem/1480) âœ…
+- [1486ë²ˆ ë“±ì‚°](https://www.acmicpc.net/problem/1486) âœ…
+- [1513ë²ˆ ê²½ë¡œ ì°¾ê¸°](https://www.acmicpc.net/problem/1513) âœ…
+- [1514ë²ˆ ìë¬¼ì‡ ](https://www.acmicpc.net/problem/1514) âœ…
+- [1561ë²ˆ ë†€ì´ ê³µì›](https://www.acmicpc.net/problem/1561) âœ…
+- [1931ë²ˆ íšŒì˜ì‹¤ ë°°ì •](https://www.acmicpc.net/problem/1931) âœ…
+- [2098ë²ˆ ì™¸íŒì› ìˆœíšŒ](https://www.acmicpc.net/problem/2098) âœ…
+- [2240ë²ˆ ìë‘ë‚˜ë¬´](https://www.acmicpc.net/problem/2240) âœ…
+- [2618ë²ˆ ê²½ì°°ì°¨](https://www.acmicpc.net/problem/2618) âœ…
+- [3015ë²ˆ ì˜¤ì•„ì‹œìŠ¤ ì¬ê²°í•©](https://www.acmicpc.net/problem/3015) âœ…
+- [5419ë²ˆ ë¶ì„œí’](https://www.acmicpc.net/problem/5419) âœ…
+- [5719ë²ˆ ê±°ì˜ ìµœë‹¨ ê²½ë¡œ](https://www.acmicpc.net/problem/5719) âœ…
+- [9370ë²ˆ ë¯¸í™•ì¸ ë„ì°©ì§€](https://www.acmicpc.net/problem/9370) âœ…
+- [9935ë²ˆ ë¬¸ìì—´ í­ë°œ](https://www.acmicpc.net/problem/9935) âœ…
+- [10942ë²ˆ íŒ°ë¦°ë“œë¡¬](https://www.acmicpc.net/problem/10942) âœ…
+- [11658ë²ˆ êµ¬ê°„ í•© êµ¬í•˜ê¸° 3](https://www.acmicpc.net/problem/11658)
+- [12851ë²ˆ ìˆ¨ë°”ê¼­ì§ˆ 2](https://www.acmicpc.net/problem/12851)
+- [12852ë²ˆ 1ë¡œ ë§Œë“¤ê¸° 2](https://www.acmicpc.net/problem/12852)
+- [12865ë²ˆ í‰ë²”í•œ ë°°ë‚­](https://www.acmicpc.net/problem/12865)
+- [12869ë²ˆ ë®¤íƒˆë¦¬ìŠ¤í¬](https://www.acmicpc.net/problem/12869)
+- [14391ë²ˆ ì¢…ì´ ì¡°ê°](https://www.acmicpc.net/problem/14391)
+- [14863ë²ˆ ì„œìš¸ì—ì„œ ê²½ì‚°ê¹Œì§€](https://www.acmicpc.net/problem/14863)
+- [14864ë²ˆ ì¤„ì„œê¸°](https://www.acmicpc.net/problem/14864)
+- [15684ë²ˆ ì‚¬ë‹¤ë¦¬ ì¡°ì‘](https://www.acmicpc.net/problem/15684)
+- [15926ë²ˆ í˜„ìš±ì€ ê´„í˜¸ì™•ì´ì•¼!!](https://www.acmicpc.net/problem/15926)
+- [15972ë²ˆ ë¬¼íƒ±í¬](https://www.acmicpc.net/problem/15972)
+- [15989ë²ˆ 1,2,3 ë”í•˜ê¸° 4](https://www.acmicpc.net/problem/15989)
+- [16118ë²ˆ ë‹¬ë¹› ì—¬ìš°](https://www.acmicpc.net/problem/16118)
+- [16637ë²ˆ ê´„í˜¸ ì¶”ê°€í•˜ê¸°](https://www.acmicpc.net/problem/16637)
+- [17070ë²ˆ íŒŒì´í”„ ì˜®ê¸°ê¸° 1](https://www.acmicpc.net/problem/17070)
+- [17071ë²ˆ ìˆ¨ë°”ê¼­ì§ˆ 5](https://www.acmicpc.net/problem/17071)
+- [17136ë²ˆ ìƒ‰ì¢…ì´ ë¶™ì´ê¸°](https://www.acmicpc.net/problem/17136)
+- [17611ë²ˆ ì§ê°ë‹¤ê°í˜•](https://www.acmicpc.net/problem/17611)
+- [17616ë²ˆ ë“±ìˆ˜ ì°¾ê¸°](https://www.acmicpc.net/problem/17616)
