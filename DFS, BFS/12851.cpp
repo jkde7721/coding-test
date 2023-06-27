@@ -21,6 +21,7 @@ void find(int n, int cnt) {
     if (visited[n] > 0 && visited[n] < cnt) return;
     
     visited[n] = cnt;
+    //아래 3개 함수 호출 순서 중요해짐 → n + 1 인자로 넘기는 함수 먼저 호출하면 시간 초과 발생
     find(n * 2, cnt + 1);
     find(n + 1, cnt + 1);
     find(n - 1, cnt + 1);
