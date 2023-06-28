@@ -26,8 +26,8 @@
 - [10942번 팰린드롬](https://www.acmicpc.net/problem/10942) ✅
 - [11658번 구간 합 구하기 3](https://www.acmicpc.net/problem/11658) ✅
 - [12851번 숨바꼭질 2](https://www.acmicpc.net/problem/12851) ✅
-- [12852번 1로 만들기 2](https://www.acmicpc.net/problem/12852)
-- [12865번 평범한 배낭](https://www.acmicpc.net/problem/12865)
+- [12852번 1로 만들기 2](https://www.acmicpc.net/problem/12852) ✅
+- [12865번 평범한 배낭](https://www.acmicpc.net/problem/12865) ✅
 - [12869번 뮤탈리스크](https://www.acmicpc.net/problem/12869)
 - [14391번 종이 조각](https://www.acmicpc.net/problem/14391)
 - [14863번 서울에서 경산까지](https://www.acmicpc.net/problem/14863)
