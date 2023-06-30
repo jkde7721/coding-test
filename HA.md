@@ -30,8 +30,8 @@
 - [12865번 평범한 배낭](https://www.acmicpc.net/problem/12865) ✅
 - [12869번 뮤탈리스크](https://www.acmicpc.net/problem/12869) ✅
 - [14391번 종이 조각](https://www.acmicpc.net/problem/14391) ✅
-- [14863번 서울에서 경산까지](https://www.acmicpc.net/problem/14863)
-- [14864번 줄서기](https://www.acmicpc.net/problem/14864)
+- [14863번 서울에서 경산까지](https://www.acmicpc.net/problem/14863) ✅
+- [14864번 줄서기](https://www.acmicpc.net/problem/14864) ✅
 - [15684번 사다리 조작](https://www.acmicpc.net/problem/15684)
 - [15926번 현욱은 괄호왕이야!!](https://www.acmicpc.net/problem/15926)
 - [15972번 물탱크](https://www.acmicpc.net/problem/15972)
