@@ -36,8 +36,8 @@
 - [15926번 현욱은 괄호왕이야!!](https://www.acmicpc.net/problem/15926) ✅
 - [15972번 물탱크](https://www.acmicpc.net/problem/15972) ✅
 - [15989번 1,2,3 더하기 4](https://www.acmicpc.net/problem/15989) ✅
-- [16118번 달빛 여우](https://www.acmicpc.net/problem/16118)
-- [16637번 괄호 추가하기](https://www.acmicpc.net/problem/16637)
+- [16118번 달빛 여우](https://www.acmicpc.net/problem/16118) ✅
+- [16637번 괄호 추가하기](https://www.acmicpc.net/problem/16637) ✅
 - [17070번 파이프 옮기기 1](https://www.acmicpc.net/problem/17070)
 - [17071번 숨바꼭질 5](https://www.acmicpc.net/problem/17071)
 - [17136번 색종이 붙이기](https://www.acmicpc.net/problem/17136)
