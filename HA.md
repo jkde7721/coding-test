@@ -42,6 +42,6 @@
 - [17071번 숨바꼭질 5](https://www.acmicpc.net/problem/17071) ✅
 - [17136번 색종이 붙이기](https://www.acmicpc.net/problem/17136) ✅
 - [17611번 직각다각형](https://www.acmicpc.net/problem/17611) ✅
-- [17616번 등수 찾기](https://www.acmicpc.net/problem/17616)
-- [3190번 뱀](https://www.acmicpc.net/problem/3190)
+- [17616번 등수 찾기](https://www.acmicpc.net/problem/17616) ✅
+- [3190번 뱀](https://www.acmicpc.net/problem/3190) ✅
 - [1167번 트리의 지름](https://www.acmicpc.net/problem/1167)
