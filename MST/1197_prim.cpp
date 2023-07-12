@@ -1,4 +1,5 @@
 //Prim 알고리즘
+//다익스트라 구현과 비슷
 //메모리: 6660KB, 시간: 48ms
 #include <bits/stdc++.h>
 using namespace std;
