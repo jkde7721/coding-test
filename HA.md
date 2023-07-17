@@ -45,3 +45,4 @@
 - [17616번 등수 찾기](https://www.acmicpc.net/problem/17616) ✅
 - [3190번 뱀](https://www.acmicpc.net/problem/3190) ✅
 - [1167번 트리의 지름](https://www.acmicpc.net/problem/1167)
+- [3665번 최종 순위](https://www.acmicpc.net/problem/3665)
