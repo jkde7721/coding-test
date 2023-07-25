@@ -1,7 +1,7 @@
 //세그먼트 트리 + 분할 정복 풀이
 //메모리: 6632KB, 시간: 44ms
 #include <bits/stdc++.h>
-#define INF 1e9
+#define INF 1e9 + 1
 using namespace std;
 
 int n, ret, h[100001];
