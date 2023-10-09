@@ -48,3 +48,4 @@
 - [3665번 최종 순위](https://www.acmicpc.net/problem/3665)
 - [1725번 히스토그램](https://www.acmicpc.net/problem/1725)
 - [13334번 철로](https://www.acmicpc.net/problem/13334)
+- [18185번 라면 사기 (Small)](https://www.acmicpc.net/problem/18185)
