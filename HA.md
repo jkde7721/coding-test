@@ -49,3 +49,4 @@
 - [1725번 히스토그램](https://www.acmicpc.net/problem/1725)
 - [13334번 철로](https://www.acmicpc.net/problem/13334)
 - [18185번 라면 사기 (Small)](https://www.acmicpc.net/problem/18185)
+- [20304번 비밀번호 제작](https://www.acmicpc.net/problem/20304)
